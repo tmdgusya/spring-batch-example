@@ -46,6 +46,9 @@ public class HelloWorldApplication {
 					@Override
 					public RepeatStatus execute(StepContribution stepContribution, ChunkContext chunkContext) throws Exception {
 						System.out.println("Step 02");
+						/**
+						 * Tasklet 이 끝났음을 알려주는 SIGNAL
+						 */
 						return RepeatStatus.FINISHED;
 					}
 				}).build();
